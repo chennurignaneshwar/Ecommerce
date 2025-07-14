@@ -5,6 +5,7 @@ and view the total price dynamically. The entire project emphasizes client-side 
 demonstrates the use of DOM manipulation, event handling, and dynamic rendering with vanilla JavaScript. The 
 final result is a responsive and interactive shopping experience prototype suitable for showcasing frontend web 
 development skills.. 
+
 #Objectives 
 • To design and develop a responsive e-commerce frontend interface. 
 • To implement dynamic product display using JavaScript arrays and DOM manipulation. 
@@ -19,6 +20,8 @@ Upon successful completion of the internship, :
 • An interactive cart module that updates in real-time and calculates the total. 
 • Improved understanding of layout structuring with HTML/CSS and interactivity through JavaScript. 
 • Development of clean, maintainable code and basic UI/UX practices for web apps. 
+
+
 #Conclusion 
 The e-commerce frontend prototype successfully meets the intended objectives by delivering an interactive user 
 interface with basic shopping functionalities. Through this project, key concepts of JavaScript such as array 

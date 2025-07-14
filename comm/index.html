@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Shop</h1>
+    <nav>
+      <button onclick="viewCart()">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="product-list"></section>
+    <section id="cart" style="display:none;"></section>
+    <button onclick="clearCart()" style="display:none; margin: 1rem;" id="clear-cart-btn">Clear Cart</button>
+  </main>
+
+  <!-- ✅ Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+
+  <!-- ✅ Firebase Initialization -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBZytILe_lSjehtiSewbP2h9sGg9Py_HvQ",
+      authDomain: "ecommercefrontend-e38fd.firebaseapp.com",
+      databaseURL: "https://ecommercefrontend-e38fd-default-rtdb.firebaseio.com",
+      projectId: "ecommercefrontend-e38fd",
+      storageBucket: "ecommercefrontend-e38fd.appspot.com",
+      messagingSenderId: "510545478614",
+      appId: "1:510545478614:web:e239606805cca1ab9b9a77",
+      measurementId: "G-J0HV72GVM4"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+  </script>
+
+  <!-- Your app script -->
+  <script src="script.js"></script>
+</body>
+</html>
